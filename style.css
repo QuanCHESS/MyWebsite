@@ -1,20 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #111;
-    color: #fff;
+    margin: 0;
     font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 35vh;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #00ff99;
-    border: none;
-    border-radius: 5px;
+.hero h1 {
+    font-size: 48px;
 }
 
-button:hover {
-    background-color: #00cc77;
+.hero p {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* CARD */
+.card {
+    max-width: 700px;
+    margin: 80px auto;
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+
+/* REVEAL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(60px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
 }
