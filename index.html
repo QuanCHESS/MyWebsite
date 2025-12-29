@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trang giới thiệu cá nhân</title>
+    <title>Giới thiệu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="hero reveal">
-    <h1>Xin chào 👋</h1>
-    <p>Mình là Noname — Web Developer</p>
-</header>
+<nav>
+    <div class="logo">CLB CHESS</div>
+    <ul>
+        <li><a href="#home">Trang chủ</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#activity">Hoạt động</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+</nav>
 
-<section class="about reveal">
-    <h2>Về tôi</h2>
-    <p>Chào mừng đến với trang web của mình. Mình làm web, học công nghệ và luôn cố gắng mỗi ngày.</p>
+<section id="home" class="hero reveal">
+    <h1>Chào mừng đến với CLB Cờ Vua</h1>
+    <p>Nơi rèn luyện trí tuệ và đam mê</p>
 </section>
 
-<section class="skills reveal">
-    <h2>Kỹ năng</h2>
-    <div class="skill-list">
-        <div class="skill">HTML & CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Git & GitHub</div>
+<section id="about" class="section reveal">
+    <h2>Giới thiệu</h2>
+    <p>
+        Câu lạc bộ được thành lập nhằm tạo môi trường giao lưu,
+        học tập và phát triển tư duy thông qua bộ môn cờ vua.
+    </p>
+</section>
+
+<section id="activity" class="section reveal">
+    <h2>Hoạt động</h2>
+    <div class="cards">
+        <div class="card">♟️ Sinh hoạt hàng tuần</div>
+        <div class="card">🏆 Giải đấu nội bộ</div>
+        <div class="card">📚 Học chiến thuật</div>
     </div>
 </section>
 
-<section class="projects reveal">
-    <h2>Dự án tiêu biểu</h2>
-    <p>Demo code + nội dung bạn muốn.</p>
+<section id="contact" class="section reveal">
+    <h2>Liên hệ</h2>
+    <p>Email: contact@example.com</p>
 </section>
 
-<section class="contact reveal">
-    <h2>Liên hệ</h2>
-    <p>Email: example@gmail.com</p>
-</section>
+<footer>
+    © 2025 CLB Cờ Vua
+</footer>
 
 <script src="script.js"></script>
 </body>
