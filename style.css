@@ -1,54 +1,26 @@
-/* BASIC */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0a0f24;
-    color: #fff;
-}
-
-/* HERO */
-.hero {
-    height: 80vh;
-    text-align: center;
-    padding-top: 25vh;
-    background: linear-gradient(135deg, #2b2f4a, #4e4c67);
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.4rem;
-}
-
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-/* SKILL */
-.skill-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.skill {
-    background: #2d4059;
-    padding: 20px;
-    border-radius: 8px;
-    width: 120px;
-}
-
-/* REVEAL ANIMATION */
+/* REVEAL BASE */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
-    transition: all 0.8s ease-out;
+    transition: all 0.8s ease;
 }
+
+/* TỪ DƯỚI */
+.reveal-bottom {
+    transform: translateY(60px);
+}
+
+/* TỪ TRÁI */
+.reveal-left {
+    transform: translateX(-80px);
+}
+
+/* TỪ PHẢI */
+.reveal-right {
+    transform: translateX(80px);
+}
+
+/* KHI HIỆN */
 .reveal.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0);
 }
