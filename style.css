@@ -1,47 +1,53 @@
-* {
-    box-sizing: border-box;
-}
-
+/* BASIC */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    background: #0a0f24;
+    color: #fff;
 }
 
 /* HERO */
 .hero {
-    height: 100vh;
+    height: 80vh;
     text-align: center;
-    padding-top: 35vh;
+    padding-top: 25vh;
+    background: linear-gradient(135deg, #2b2f4a, #4e4c67);
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 20px;
-    opacity: 0.8;
+    font-size: 1.4rem;
 }
 
-/* CARD */
-.card {
-    max-width: 700px;
-    margin: 80px auto;
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SKILL */
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.skill {
+    background: #2d4059;
+    padding: 20px;
+    border-radius: 8px;
+    width: 120px;
 }
 
 /* REVEAL ANIMATION */
 .reveal {
     opacity: 0;
-    transform: translateY(60px);
-    transition: all 0.8s ease;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
 }
-
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
