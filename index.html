@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Chess.com Profile Card</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <div class="logo">CLB CHESS</div>
-    <ul>
-        <li><a href="#home">Trang chủ</a></li>
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#activity">Hoạt động</a></li>
-        <li><a href="#contact">Liên hệ</a></li>
-    </ul>
-</nav>
-
-<section id="home" class="hero reveal">
-    <h1>Chào mừng đến với CLB Cờ Vua</h1>
-    <p>Nơi rèn luyện trí tuệ và đam mê</p>
-</section>
-
-<section id="about" class="section reveal">
-    <h2>Giới thiệu</h2>
-    <p>
-        Câu lạc bộ được thành lập nhằm tạo môi trường giao lưu,
-        học tập và phát triển tư duy thông qua bộ môn cờ vua.
-    </p>
-</section>
-
-<section id="activity" class="section reveal">
-    <h2>Hoạt động</h2>
-    <div class="cards">
-        <div class="card">♟️ Sinh hoạt hàng tuần</div>
-        <div class="card">🏆 Giải đấu nội bộ</div>
-        <div class="card">📚 Học chiến thuật</div>
+<div class="card">
+  <div class="left">
+    <div class="avatar">
+      <img id="avatar" src="">
     </div>
-</section>
 
-<section id="contact" class="section reveal">
-    <h2>Liên hệ</h2>
-    <p>Email: contact@example.com</p>
-</section>
+    <div class="info">
+      <h1 id="username">Loading...</h1>
 
-<footer>
-    © 2025 CLB Cờ Vua
-</footer>
+      <div class="stats">
+        <div class="stat bullet">
+          <span class="icon">🟡</span><span id="bullet">---</span>
+        </div>
+        <div class="stat blitz">
+          <span class="icon">⚡</span><span id="blitz">---</span>
+        </div>
+        <div class="stat rapid">
+          <span class="icon">⏱</span><span id="rapid">---</span>
+        </div>
+        <div class="stat daily">
+          <span class="icon">☀</span><span id="daily">---</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="chesscom">♟ Chess.com</div>
+</div>
 
 <script src="script.js"></script>
 </body>
